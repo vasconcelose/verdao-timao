@@ -13,7 +13,7 @@ for (ano in anos) {
 	df <- read.csv(paste('dados/tratados/', ano, '.csv', sep=''))
 
 	q <- "SELECT MAX(pontos) AS pmax, MAX(v) AS vmax, MAX(e) AS emax, MAX(d) AS dmax,
-		MAX(gm) AS gmmax, MAX(gs) AS gsmax, MAX(sg) AS sgmax FROM df"
+		MAX(gm) AS gmmax, MAX(gs) AS gsmax FROM df"
 
 	maximos <- sqldf(q)
 
@@ -23,7 +23,6 @@ for (ano in anos) {
 	df$d <- df$d / maximos$dmax
 	df$gm <- df$gm / maximos$gmmax
 	df$gs <- df$gs / maximos$gsmax
-	df$sg <- df$sg / maximos$sgmax
 
 	# selecao de campeao do ano
 	campeao <- df[df$classif == 1, ]
@@ -36,7 +35,7 @@ for (ano in anos) {
 	verdao <- NULL
 	verdao <- df[df$time == 'Palmeiras', ]
 
-	pnum <- c('pontos', 'v', 'e', 'd', 'gm', 'gs', 'sg')
+	pnum <- c('pontos', 'v', 'e', 'd', 'gm', 'gs')
 
 	# calcular distancias
 	if (nrow(timao) != 0 & nrow(verdao) != 0) {
