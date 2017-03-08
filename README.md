@@ -1,5 +1,5 @@
 # verdao-timao
-Comparação histórica entre as equipes do Palmeiras e do Corinthians no Brasileirão (Edudatalab)
+Comparação histórica entre as equipes do Palmeiras e do Corinthians no Brasileirão (Edudatalab: https://edudatalab.wordpress.com/2017/03/08/verdao-x-coringao-quem-e-o-maioral-uma-metodologia-de-tira-teima-baseada-em-dados-historicos/)
 
 Visite https://edudatalab.wordpress.com/
 
