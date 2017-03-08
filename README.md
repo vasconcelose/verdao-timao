@@ -12,6 +12,7 @@ Visite https://edudatalab.wordpress.com/
 
 * dados/crus: contém tabelas de classificação final do Brasileirão entre 2003 e 2016 (CSV)
 * dados/tratados: contém tabelas de classificação final do Brasileirão entre 2003 e 2016 (CSV formatado)
+* transforma.r: script R que implementa a metodologia de comparação
 
 ## Quem
 
